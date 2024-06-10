@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La métropole mobilité</title>
+    <link rel="stylesheet" href="styl/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="manifest" href="./manifest.json" />
+    <script src="js/buyTicket.js" defer></script>
+    <script src="js/payment.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1><span class="close">X</span>E-tickets</h1>
+    </header>
+    <div class="mobile">
+      <section class="without-title">
+        <h2>Auncun titre à utiliser.</h2>
+        <p>Vous pouvez acheter des titres pour voyager sur le réseau</p>
+        <button>Acheter des titres</button>
+      </section>
+      <div class="select-ticket">
+        <table>
+          <tr>
+            <td class="item">
+              <img src="img/titles.png" alt="" />
+              <p>
+                1 VOYAGE AIX EN BUS <br />
+                Valable 60 minutes
+              </p>
+            </td>
+            <td class="number">
+              <span class="add-remove">
+                <span class="remove">-</span> <span class="nbr">0</span>
+                <span class="more">+</span>
+              </span>
+              <span class="price">1,20 &euro;</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="item">
+              <img src="img/titles.png" alt="" />
+              <p>
+                10 VOYAGE AIX EN BUS <br />
+                Valable 60 minutes sur Aix en Bus <br />
+                Multi-validable
+              </p>
+            </td>
+            <td class="number">
+              <span class="add-remove">
+                <span class="remove">-</span>
+                <span class="nbr">0</span>
+                <span class="more">+</span>
+              </span>
+              <span class="price">9,00 &euro;</span>
+            </td>
+          </tr>
+        </table>
+        <div class="basket-tickets">
+          <p>Total:</p>
+          <button>Acheter</button>
+        </div>
+      </div>
+      <div class="accept-condition">
+        <p class="total">Total de la commande :</p>
+        <p class="detail"></p>
+        <label class="condition">
+            <input type="checkbox" name="condition" id="" />J'ai lu et j'accepte les <a href="">conditions générales de vente</a>
+        </label>
+        <button>Payer</button>
+      </div>
+      <div class="payment">
+        <p class="card-condition">
+          <span class="cruz">X</span>
+          Une fois le numéro correctement renseigné, la marque de votre carte
+          bancaire apparaîtra. <br /><br />
+          Si votre carte contient plusieurs marques, une marque apparaîtra par
+          défaut et vous pourrez facilement modifier ce choix en cliquant sur la
+          flèche.
+        </p>
+        <p class="crypto-condition">
+          <span class="cruz">X</span>
+          Ce champ est obligatoire uniquement pour les moyens de paiement possédant un cryptogramme visuel. <br /><br />
+          Le cryptogramme visuel de la carte correspond au de 3 chiffres présent au verso de votre carte, à droite dans la zone de signature. <br>
+          <img src="img/crypto.png" alt="">
+        </p>
+        <div class="header">
+          <img src="img/laMetropole.png" alt="" />
+          <div class="language-choice">FR</div>
+        </div>
+        <div class="price">Montant :</div>
+        <form action="" id="payment-form" method="post">
+          <label class="block" for="card-number">Numéro de carte</label>
+          <span class="block price-container"
+            ><input id="card-number" type="number" /><img
+              src="img/credit-card.png"
+              alt=""
+            /><span class="question number-question">?</span></span
+          >
+          <label class="block" for="expiration">Expire fin</label>
+          <span class="block expiration"
+            ><span class="arrow-container"
+              ><input type="" name="" id="expiration" value="  mois" /><img
+                src="img/arrow.png"
+                alt="" /></span
+            ><span class="arrow-container"
+              ><input type="" name="" id="" value="  année" /><img
+                src="img/arrow.png"
+                alt="" /></span
+          ></span>
+          <label class="block" for="crypto">Cryptogramme visuel</label>
+          <span class="block"
+            ><input type="number" name="" id="" /><span
+              class="question crypto-question"
+              >?</span
+            ></span
+          >
+          <button>Valider</button>
+          <div class="logo">
+            <img src="img/visa.png" alt="" />
+            <img src="img/secure.png" alt="" />
+            <img src="img/mastercard.png" alt="" />
+          </div>
+        </form>
+        <div>
+          <p class="back-to-shop">Annuler et retourner à la boutique</p>
+          <div class="logo">
+            <img src="img/zen.png" alt="" />
+            <img src="img/pci.png" alt="" />
+          </div>
+          <p class="small-container">
+            <small>Copyright Lyra @ 2024</small>
+            <small><a href="">Mentions légales</a></small>
+          </p>
+        </div>
+      </div>
+      <footer>
+        <nav>
+          <ul>
+            <li>
+              <button>
+                <img src="img/house.png" alt="" />
+                <p>Accueil</p>
+              </button>
+            </li>
+            <li>
+              <button>
+                <img src="img/time.png" alt="" />
+                <p>Horaires</p>
+              </button>
+            </li>
+            <li>
+              <button>
+                <img src="img/titles.png" alt="" />
+                <p style="color: #bf3232">Mes titres</p>
+              </button>
+            </li>
+            <li>
+              <button>
+                <img src="img/traffic.png" alt="" />
+                <p>Infos trafic</p>
+              </button>
+            </li>
+            <li>
+              <button>
+                <img src="img/menu.png" alt="" />
+                <p>Menu</p>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </footer>
+    </div>
+    <section class="error-connexion">
+      <img src="img/dinosaure.png" alt="" />
+      <h2>Impossible de se connecter à internet.</h2>
+      <p>
+        Cette page web ne peut pas s'afficher, car votre ordinateur n'est pas
+        connécté à internet.
+      </p>
+    </section>
+    <script>
+        window.addEventListener("load", () => {
+            if ("serviceWorker" in navigator) {
+              navigator.serviceWorker.register("./sw.js");
+            }
+        });
+    </script>
+  </body>
+</html>

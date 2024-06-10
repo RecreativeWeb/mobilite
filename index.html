@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La métropole mobilité</title>
+    <link rel="stylesheet" href="styl/style.css">
+    <link rel="manifest" href="./manifest.json" />
+</head>
+<body>
+    <div class="index">
+        <img src="img/logo-metropole.png" class="metropole" alt="logo-metropole-mobilité">
+        <img src="img/aix-marseille.png" class="aix-marseille" alt="logo-Aix-Marseille">
+    </div>
+    <section class="error-connexion">
+        <img src="img/dinosaure.png" alt="">
+        <h2>Impossible de se connecter à internet.</h2>
+        <p>Cette page web ne peut pas s'afficher, car votre ordinateur n'est pas connécté à internet.</p>
+    </section>
+    <script>
+        setTimeout(function () {
+            document.location.href = "titles.html";
+        }, 2000);
+        
+        window.addEventListener("load", () => {
+            if ("serviceWorker" in navigator) {
+            navigator.serviceWorker.register("./sw.js");
+            }
+        });
+    </script>
+</body>
+</html>

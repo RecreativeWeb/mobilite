@@ -1,0 +1,369 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+.index {
+  display: block;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.index .aix-marseille {
+  display: block;
+  position: absolute;
+  bottom: 0;
+}
+.mobile {
+  display: block;
+}
+.error-connexion {
+  display: none;
+  padding: 100px 50px 50px 50px;
+}
+.error-connexion h2 {
+  padding: 20px;
+}
+.error-connexion p {
+  padding-left: 20px;
+}
+@media screen and (min-width: 450px) {
+  header {
+    display: none;
+  }
+  .index,
+  .mobile {
+    display: none;
+  }
+  .error-connexion {
+    display: block;
+  }
+}
+header {
+  height: 100px;
+  background: #fe9430;
+  background: linear-gradient(to right, #efb558 0%, #f45c1a 100%);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+header h1 {
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.4rem;
+  padding-bottom: 20px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+header h1 .close,
+header h1 .back {
+  position: absolute;
+  left: 10px;
+  display: none;
+}
+@media screen and (min-width: 450px) {
+  header {
+    display: none;
+  }
+}
+.without-title h2,
+.without-title p {
+  text-align: center;
+}
+.without-title h2 {
+  font-weight: 500;
+  padding: 20px;
+  margin-top: 130px;
+}
+.without-title p {
+  font-size: 1.2rem;
+  padding: 10px;
+}
+.without-title button {
+  width: 80%;
+  margin: auto;
+  margin-top: 30px;
+  padding: 15px;
+  background-color: #ec3828;
+  display: block;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 1.2rem;
+}
+.select-ticket {
+  display: none;
+}
+.select-ticket table {
+  width: 100%;
+}
+.select-ticket table tr .item {
+  width: 75%;
+  display: flex;
+  padding: 20px;
+}
+.select-ticket table tr .item img {
+  display: block;
+}
+.select-ticket table tr .item p {
+  font-size: 0.7rem;
+  margin-left: 20px;
+}
+.select-ticket table tr .number {
+  width: 25%;
+  padding: 10px;
+}
+.select-ticket table tr .number .add-remove {
+  display: block;
+  text-align: center;
+}
+.select-ticket table tr .number .add-remove .remove,
+.select-ticket table tr .number .add-remove .more {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  border: 1px solid #909090;
+  border-radius: 50%;
+  color: #909090;
+  text-align: center;
+}
+.select-ticket table tr .number .add-remove .more {
+  background-color: #ec3828;
+  color: #fff;
+  border: none;
+  text-align: center;
+}
+.select-ticket table tr .number .add-remove .nbr {
+  padding: 0 10px;
+}
+.select-ticket table tr .number .price {
+  display: block;
+  text-align: center;
+  background-color: #c0c0c0;
+  padding: 2px;
+  margin: 2px;
+}
+.select-ticket .basket-tickets {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #c0c0c0;
+  padding: 20px;
+}
+.select-ticket .basket-tickets p {
+  text-align: right;
+  width: 75%;
+  padding-right: 20px;
+}
+.select-ticket .basket-tickets button {
+  width: 80%;
+  margin: auto;
+  margin-top: 30px;
+  padding: 15px;
+  background-color: #ec3828;
+  display: block;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 1.2rem;
+}
+.accept-condition {
+  display: none;
+}
+.accept-condition .total {
+  width: 80%;
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding: 30px 10px 10px;
+  border-bottom: 1px dashed #c0c0c0;
+}
+.accept-condition .condition {
+  display: block;
+  margin-top: 100px;
+  padding: 8px;
+}
+.accept-condition .condition input[type="checkbox"] {
+  display: inline-block;
+  margin-right: 10px;
+}
+.accept-condition button {
+  width: 80%;
+  margin: auto;
+  margin-top: 30px;
+  padding: 15px;
+  background-color: rgba(236,56,40,0.6);
+  display: block;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 1.2rem;
+  position: absolute;
+  bottom: 20px;
+  left: 10%;
+}
+.accept-condition button .checked {
+  background-color: #ec3828;
+}
+.payment {
+  display: none;
+  background-color: #e5e5e5;
+  position: relative;
+}
+.payment .header {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.payment .header .language-choice {
+  padding: 20px;
+  background-color: #767474;
+  color: #fff;
+}
+.payment .price {
+  padding: 20px;
+  color: #767474;
+  background-color: #fff;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+.payment form {
+  padding: 30px;
+  margin-top: 10px;
+  background-color: #fff;
+  color: #6a6a6a;
+}
+.payment form .block {
+  display: block;
+  margin-bottom: 10px;
+}
+.payment form .block input {
+  background-color: #ebeaea;
+  height: 32px;
+  border: 1px solid #c0c0c0;
+}
+.payment form .block #card-number {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.payment form .block .question {
+  width: 15px;
+  height: 15px;
+  border: 1px solid #c0c0c0;
+  border-radius: 50%;
+  color: #c0c0c0;
+  line-height: 15px;
+  text-align: center;
+  margin-left: 5px;
+  display: inline-block;
+}
+.payment form .price-container {
+  display: flex;
+  align-items: center;
+}
+.payment form .expiration {
+  display: flex;
+  justify-content: space-between;
+}
+.payment form .expiration .arrow-container {
+  display: flex;
+  align-items: center;
+}
+.payment form .expiration .arrow-container input {
+  width: 45%;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-right: none;
+}
+.payment form button {
+  display: block;
+  padding: 15px;
+  width: 50%;
+  margin: 20px auto 0;
+  background-color: #1d71f3;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+.payment .back-to-shop {
+  text-align: right;
+  font-size: 0.8rem;
+  padding: 10px;
+  border-bottom: 2px solid #c0c0c0;
+}
+.payment .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+.payment .small-container {
+  display: flex;
+  justify-content: space-around;
+  color: #847979;
+}
+.payment .small-container small {
+  padding: 20px;
+}
+.payment .small-container small a {
+  color: #847979;
+}
+.payment .card-condition {
+  display: none;
+  width: 70%;
+  background-color: #fff;
+  padding: 0 20px 20px 10px;
+  font-size: 0.8rem;
+  position: absolute;
+  top: 60px;
+  margin-left: 10%;
+  box-shadow: 5px 5px 23px -7px #000;
+  color: #4c4949;
+}
+.payment .card-condition .cruz {
+  display: block;
+  text-align: right;
+  padding: 5px 0 20px 0;
+  font-size: 1.2rem;
+}
+.payment .crypto-condition {
+  display: none;
+  width: 70%;
+  background-color: #fff;
+  padding: 0 20px 20px 10px;
+  font-size: 0.8rem;
+  position: absolute;
+  top: 160px;
+  margin-left: 10%;
+  box-shadow: 5px 5px 23px -7px #000;
+  color: #4c4949;
+}
+.payment .crypto-condition .cruz {
+  display: block;
+  text-align: right;
+  padding: 5px 0 20px 0;
+  font-size: 1.2rem;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #c0c0c0;
+  padding-bottom: 20px;
+  padding-top: 5px;
+  background-color: #fff;
+}
+footer ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+footer ul button {
+  border: none;
+  background-color: inherit;
+}

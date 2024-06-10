@@ -1,0 +1,14 @@
+{
+  "name": "Mobilité",
+  "short_name": "Mobilité",
+  "icons": [
+    {
+      "src": "./img/favicon.png",
+      "type": "image/png",
+      "sizes": "61x61"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone", 
+  "service_worker": "sw.js"
+}
